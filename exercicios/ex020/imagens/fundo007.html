@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alinhamento vertical</title>
+    <title>Alinhamento vertical</title>
     <style>
-        #container{
-height: 500px;
-background-color: blueviolet;
-padding: 15px;
+        #container {
+            background-image: url("target001.png");
+            background-size: 100% 100%;
+            position: relative;
+            height: 500px;
+            background-color: purple;
+            padding: 15px;
         }
-        #conteudo{
-height: 200px;
-width: 400px;
-background-color: yellow;
 
+        #conteudo {
+            background-image: url("target001.png");
+            background-size: 100% 100%;
+            
+            position: absolute;
+            height: 200px;
+            width: 400px;
+left: 50%;
+top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: yellow;
         }
     </style>
 </head>
-<body>
-    <section id="container">
-        <article id="conteudo">
 
-        </article>
-    </section>
+<body>
+    <article id="container">
+        <section id="conteudo">
+
+        </section>
+    </article>
 </body>
+
 </html>
